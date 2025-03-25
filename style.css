@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+:root {
+  --background: #f9fafb;
+  --primary: #222;
+  --accent: #3dbec7;
+  --light-accent: #def3f5;
+  --section-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Iansui", cursive;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--light-accent);
+  padding-bottom: 0.3rem;
+}
+
+h4 {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--accent);
+}
+
+ul {
+  margin-bottom: 0.5rem 0 1.5rem 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+h4::before {
+  content: "🟢";
+}
+
+.youtube-wrapper {
+  position: relative;
+  margin: 1.5rm 0;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
